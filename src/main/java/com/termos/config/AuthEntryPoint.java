@@ -16,7 +16,7 @@ public class AuthEntryPoint extends BasicAuthenticationEntryPoint {
 
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse httpresponse, AuthenticationException authException)throws IOException, ServletException {
-        httpresponse.addHeader("WWW-Authenticate",
+        httpresponse.addHeader("WWW-Authenticate" ,
                 "Basic realm=\"" + this.getRealmName() + "\"");
         httpresponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
         PrintWriter writer = httpresponse.getWriter();
