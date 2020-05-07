@@ -1,0 +1,57 @@
+drop table if exists orders CASCADE;
+drop table if exists books;
+drop table if exists users;
+
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+CREATE TABLE users
+(
+    user_id VARCHAR(128) DEFAULT uuid_generate_v1()::varchar,
+	city VARCHAR(128),
+	first_name VARCHAR(128),
+	sur_name VARCHAR(128),
+	user_tel integer,
+    reg_date TIMESTAMP NULL,
+    username VARCHAR(50),
+    password VARCHAR(60),
+    email VARCHAR(128),
+	enabled boolean default true,
+    PRIMARY KEY (user_id)
+);
+select * from users;
+
+CREATE TABLE books
+(
+    book_id VARCHAR(128)  NOT NULL,
+	title VARCHAR(128) NOT NULL,
+	author VARCHAR(128) NOT NULL,
+	price DOUBLE PRECISION NOT NULL,
+	description VARCHAR(128) NOT NULL,
+    release_date DATE NOT NULL,
+    PRIMARY KEY (book_id)
+);
+select * from books;
+
+CREATE TABLE orders
+(
+    order_id VARCHAR(128)  NOT NULL,
+    book_id character varying references books(book_id),
+	user_id character varying references users(user_id),
+	order_date TIMESTAMP NOT NULL,
+	quantity integer NOT NULL,
+	price DOUBLE PRECISION NOT NULL,
+	status VARCHAR(128) NOT NULL,
+    invoice VARCHAR(128)NOT NULL,
+
+    PRIMARY KEY (order_id)
+);
+select * from orders;
+
+
+CREATE TABLE authorities
+(
+    username VARCHAR(50),
+    authority VARCHAR(128)
+);
+
+select * from authorities;

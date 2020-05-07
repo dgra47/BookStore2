@@ -1,0 +1,128 @@
+{
+  "city":"Gdansk",
+  "firstName":"Adam",
+  "surName":"Mito",
+  "userTel":785785785,
+  "regDate":20022018,
+  "username":"AdamM",
+  "password":"Adam34!",
+  "matchingPassword":"Adam34!",
+  "email":"adam.m@gmail.com",
+  "authorities":["ROLE_ADMIN"],
+  "enabled":1
+}
+{
+  "city":"Warszawa",
+  "firstName":"Anna",
+  "surName":"Wito",
+  "userTel":785785678,
+  "regDate":20022016,
+  "username":"AnnaW",
+  "password":"Anna45!",
+  "matchingPassword":"Anna45!",
+  "email":"anna.w@gmail.com",
+  "authorities":["ROLE_USER"],
+  "enabled":1
+}
+
+
+
+{
+  "city":"Wolomin",
+  "firstName":"Damian",
+  "surName":"Cito",
+  "userTel":785785612,
+  "regDate":20022078,
+  "username":"DamianC",
+  "password":"Damian45!",
+  "matchingPassword":"Damian45!",
+  "email":"damian.c@gmail.com",
+  "authorities":["ROLE_USER"],
+  "enabled":1
+}
+
+{
+  "city":"Walbrzych",
+  "firstName":"Nina",
+  "surName":"Sito",
+  "userTel":785785622,
+  "regDate":20021916,
+  "username":"NinaD",
+  "password":"Nina@#$1!",
+  "matchingPassword":"Nina@#$1!",
+  "email":"nina.d@02.pl",
+  "authorities":["ROLE_USER"],
+  "enabled":1}
+
+
+
+{
+  "city":"Wilno",
+  "firstName":"Vito",
+  "surName":"Hito",
+  "userTel":785785633,
+  "regDate":20042006,
+  "username":"VitoH",
+  "password":"Vito@#$1!",
+  "matchingPassword":"Vito@#$1!",
+  "email":"vito.h@tlen.pl",
+  "authorities":["ROLE_USER"],
+  "enabled":1
+}
+
+{
+  "city":"Toronto",
+  "firstName":"Tim",
+  "surName":"Tito",
+  "userTel":785785644,
+  "regDate":20022007,
+  "username":"TimT",
+  "password":"agyt@#$1!",
+  "matchingPassword":"agyt@#$1!",
+  "email":"timt@hotmail.com",
+  "authorities":["ROLE_USER"],
+  "enabled":1
+}
+
+{
+  "city":"LA",
+  "firstName":"Gavin",
+  "surName":"Gito",
+  "userTel":785785655,
+  "regDate":20022008,
+  "username":"GavinG",
+  "password":"acfg@#$1!",
+  "matchingPassword":"acfg@#$1!",
+  "email":"gg@hotmail.com",
+  "authorities":["ROLE_ADMIN"],
+  "enabled":1
+}
+
+{
+  "city":"Paris",
+  "firstName":"Adele",
+  "surName":"Aito",
+  "userTel":785785666,
+  "regDate":20022009,
+  "username":"AdeleA",
+  "password":"los@#$1!",
+  "matchingPassword":"los@#$1!",
+  "email":"adele@microsoft.com",
+  "authorities":["ROLE_USER"],
+  "enabled":1
+}
+
+{
+  "city":"Lublin",
+  "firstName":"Tom",
+  "surName":"Fito",
+  "userTel":785785677,
+  "regDate":22012020,
+  "username":"TomF",
+  "password":"xcv@#$1!",
+  "matchingPassword":"xcv@#$1!",
+  "email":"tt@hotmail.eu",
+  "authorities":["ROLE_USER"],
+  "enabled":1
+}
+

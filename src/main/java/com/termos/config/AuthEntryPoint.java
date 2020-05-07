@@ -1,0 +1,32 @@
+package com.termos.config;
+
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.web.authentication.www.BasicAuthenticationEntryPoint;
+import org.springframework.stereotype.Component;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+@Component
+public class AuthEntryPoint extends BasicAuthenticationEntryPoint {
+    private String realmName = "BASIC_REALM";
+
+    @Override
+    public void commence(HttpServletRequest request, HttpServletResponse httpresponse, AuthenticationException authException)throws IOException, ServletException {
+        httpresponse.addHeader("WWW-Authenticate",
+                "Basic realm=\"" + this.getRealmName() + "\"");
+        httpresponse.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+        PrintWriter writer = httpresponse.getWriter();
+        writer.println("HTTP Status 401 - " + authException.getMessage());
+    }
+
+
+    public void afterPropertiesSet() throws Exception {
+        setRealmName(realmName);
+        super.afterPropertiesSet();
+    }
+
+}
